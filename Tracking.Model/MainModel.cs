@@ -68,9 +68,11 @@ namespace Tracking.Model
                     { 
                          left.Remove(item);
                          right.Add(item);
+                        item.Check = false;
                     }
                    
                 }
+
             }
             else if (option == MoveType.RightToLeft)
             {
@@ -84,6 +86,7 @@ namespace Tracking.Model
                     {
                         right.Remove(item);
                         left.Add(item);
+                        item.Check = false;
                     }
                 }
             }
